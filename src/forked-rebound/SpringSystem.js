@@ -165,7 +165,8 @@ class SpringSystem {
     }
     if (this.getIsIdle()) {
       this._isIdle = false
-      this.looper.run()
+      // this.looper.run()
+      this.loop(-1)
     }
   }
 }
